@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard — Just in Time</title>
+    <link rel="stylesheet" href="style_dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Just in Time — Gestão de Produção</h1>
+        <span>Olá, <strong id="nome-usuario"></strong></span>
+    </header>
+    <nav>
+        <a href="produtos.html">Cadastro de Produtos</a>
+        <a href="producao.html">Gestão de Produção</a>
+        <button class="btn-logout" id="btn-logout">Sair</button>
+    </nav>
+    <main>
+        <h2>Dashboard</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3 id="total-produtos">—</h3>
+                <p>Produtos cadastrados</p>
+            </div>
+            <div class="card">
+                <h3 id="total-movimentacoes">—</h3>
+                <p>Movimentações registradas</p>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Produção — Just in Time</title>
+    <link rel="stylesheet" href="style_producao.css">
+</head>
+<body>
+    <header>
+        <h1>Gestão de Produção</h1>
+        <span>Olá, <strong id="nome-usuario"></strong></span>
+    </header>
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="produtos.html">Cadastro de Produtos</a>
+        <button class="btn-logout" id="btn-logout">Sair</button>
+    </nav>
+    <main>
+        <div class="form-card">
+            <h3 id="form-producao-titulo">Nova Movimentação</h3>
+            <input type="hidden" id="producao-id">
+            <div class="form-group">
+                <label>Produto</label>
+                <select id="select-produto"></select>
+            </div>
+            <div class="form-group">
+                <label>Tipo</label>
+                <select id="select-tipo">
+                    <option value="FABRICADO">Fabricado (Entrada)</option>
+                    <option value="PEDIDO">Pedido (Saída)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Quantidade</label>
+                <input type="number" id="input-quantidade" min="1" value="1">
+            </div>
+            <div class="form-group">
+                <label>Status</label>
+                <select id="select-status">
+                    <option value="PENDENTE">Pendente</option>
+                    <option value="EM_PRODUCAO">Em Produção</option>
+                    <option value="CONCLUIDO">Concluído</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Data da Movimentação</label>
+                <input type="date" id="input-data">
+            </div>
+            <button class="btn-success" id="btn-registrar">Registrar</button>
+            <button class="btn-danger" id="btn-cancelar-edicao-producao" style="display: none; margin-left: 8px;">Cancelar Edição</button>
+        </div>
+
+        <h3 class="section-title">Movimentações</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Produto</th>
+                    <th>Tipo</th>
+                    <th>Quantidade</th>
+                    <th>Status</th>
+                    <th>Usuário</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-producao"></tbody>
+        </table>
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

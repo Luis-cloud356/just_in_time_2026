@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos — Just in Time</title>
+    <link rel="stylesheet" href="style_produtos.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Produtos</h1>
+        <span>Olá, <strong id="nome-usuario"></strong></span>
+    </header>
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="producao.html">Gestão de Produção</a>
+        <button class="btn-logout" id="btn-logout">Sair</button>
+    </nav>
+    <main>
+        <div class="form-card">
+            <h3 id="form-titulo">Cadastrar Novo Produto</h3>
+            <input type="hidden" id="produto-id">
+            <div class="form-group">
+                <label>Nome do Produto</label>
+                <input type="text" id="produto-nome" placeholder="Ex: Mesa de Centro MDF">
+            </div>
+            <div class="form-group">
+                <label>Descrição</label>
+                <input type="text" id="produto-descricao" placeholder="Ex: MDF 15mm amadeirado">
+            </div>
+            <div class="form-group">
+                <label>Custo (R$)</label>
+                <input type="number" id="produto-custo" min="0" step="0.01" placeholder="0.00">
+            </div>
+            <div class="form-group">
+                <label>Quantidade em Estoque</label>
+                <input type="number" id="produto-quantidade" min="0" placeholder="0">
+            </div>
+            <div class="form-group">
+                <label>Estoque Mínimo</label>
+                <input type="number" id="produto-estoque-minimo" min="0" placeholder="0">
+            </div>
+            <button class="btn-success" id="btn-salvar">Salvar Produto</button>
+            <button class="btn-danger" id="btn-cancelar-edicao" style="display: none; margin-left: 8px;">Cancelar Edição</button>
+        </div>
+
+        <h3 class="section-title">Produtos Cadastrados</h3>
+        <div class="toolbar">
+            <input type="text" id="input-busca" placeholder="Buscar produto por nome...">
+            <button class="btn-primary" id="btn-buscar">Buscar</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Custo (R$)</th>
+                    <th>Qtd.</th>
+                    <th>Estoque Mín.</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-produtos"></tbody>
+        </table>
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

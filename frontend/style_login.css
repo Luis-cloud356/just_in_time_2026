@@ -1,0 +1,263 @@
+/* ================================
+   CONFIGURAÇÕES GERAIS
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        linear-gradient(135deg, #d8c3ad, #eee5da, #c5aa8e);
+
+    color: #2e241d;
+}
+
+
+/* ================================
+   CONTAINER DO LOGIN
+================================ */
+
+.login-container {
+    width: 90%;
+    max-width: 400px;
+
+    background: #f8f4ef;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    border-top: 6px solid #b87945;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.20);
+}
+
+
+/* ================================
+   TÍTULO
+================================ */
+
+.login-container h1 {
+    text-align: center;
+
+    color: #5a3825;
+
+    font-size: 32px;
+
+    margin-bottom: 5px;
+}
+
+.login-container > p {
+    text-align: center;
+
+    color: #8a5838;
+
+    font-size: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+/* ================================
+   TÍTULO ENTRAR / CRIAR CONTA
+================================ */
+
+.login-container h2 {
+    text-align: center;
+
+    color: #5a3825;
+
+    margin-bottom: 20px;
+
+    font-size: 23px;
+}
+
+
+/* ================================
+   CAMPOS DO FORMULÁRIO
+================================ */
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+
+    color: #3d2b20;
+}
+
+input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #cdb9a5;
+
+    border-radius: 6px;
+
+    background: #fffdf9;
+
+    color: #2e241d;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+input:focus {
+    outline: none;
+
+    border-color: #9a633e;
+
+    box-shadow: 0 0 0 2px rgba(154, 99, 62, 0.15);
+}
+
+input::placeholder {
+    color: #9b8b7d;
+}
+
+
+/* ================================
+   BOTÕES
+================================ */
+
+button {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 8px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+
+/* Botão Entrar / Cadastrar */
+
+.btn-primary {
+    background: #6b4228;
+
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #4f2f1d;
+
+    transform: translateY(-1px);
+}
+
+
+/* Botão Criar Conta */
+
+.btn-warning {
+    background: #b87945;
+
+    color: white;
+}
+
+.btn-warning:hover {
+    background: #8a5838;
+
+    transform: translateY(-1px);
+}
+
+
+/* Botão Produção */
+
+.btn-producao {
+    position: fixed;
+
+    bottom: 25px;
+    right: 25px;
+
+    width: auto;
+
+    padding: 12px 20px;
+
+    background: #5a3825;
+
+    color: white;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.20);
+}
+
+.btn-producao:hover {
+    background: #8a5838;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   MENSAGEM DE ERRO
+================================ */
+
+.erro {
+    margin-top: 14px;
+
+    text-align: center;
+
+    color: #a33e32;
+
+    font-size: 14px;
+
+    min-height: 18px;
+}
+
+
+/* ================================
+   CELULAR
+================================ */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .login-container {
+        width: 100%;
+
+        padding: 25px;
+    }
+
+    .login-container h1 {
+        font-size: 28px;
+    }
+
+    .btn-producao {
+        bottom: 15px;
+        right: 15px;
+
+        padding: 10px 15px;
+
+        font-size: 13px;
+    }
+}
