@@ -38,22 +38,22 @@ async function main() {
         nome: 'Mesa MDF',
         descricao: 'Mesa fabricada em MDF',
         custo: 250.00,
-        quantidade_estoque: 10,
-        estoque_minimo: 5
+        quantidade: 10,
+        estoqueMinimo: 5
       },
       {
         nome: 'Armário MDF',
         descricao: 'Armário fabricado em MDF',
         custo: 500.00,
-        quantidade_estoque: 8,
-        estoque_minimo: 3
+        quantidade: 8,
+        estoqueMinimo: 3
       },
       {
         nome: 'Prateleira MDF',
         descricao: 'Prateleira fabricada em MDF',
         custo: 80.00,
-        quantidade_estoque: 4,
-        estoque_minimo: 5
+        quantidade: 4,
+        estoqueMinimo: 5
       }
     ]
   });
@@ -63,20 +63,20 @@ async function main() {
       {
         quantidade_produzida: 5,
         data_producao: new Date('2026-09-01'),
-        id_produto: 1,
-        id_usuario: 1
+        produtoId: 1,
+        usuarioId: 1
       },
       {
         quantidade_produzida: 10,
         data_producao: new Date('2026-09-02'),
-        id_produto: 2,
-        id_usuario: 2
+        produtoId: 2,
+        usuarioId: 2
       },
       {
         quantidade_produzida: 3,
         data_producao: new Date('2026-09-03'),
-        id_produto: 3,
-        id_usuario: 3
+        produtoId: 3,
+        usuarioId: 3
       }
     ]
   });
