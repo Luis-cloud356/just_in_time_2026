@@ -1,29 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <title>Login — Just in Time</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Loja MDF - Login</title>
+
     <link rel="stylesheet" href="style_login.css">
 </head>
+
 <body>
+
     <div class="login-container">
+
+        <h1>Loja MDF</h1>
+
         <h2 id="titulo-auth">Entrar</h2>
-        <div class="form-group" id="grupo-nome" style="display: none;">
-            <label>Nome</label>
-            <input type="text" id="input-nome" placeholder="Seu nome">
+
+        
+        <div id="grupo-nome">
+            <label for="input-nome">Nome</label>
+            <input
+                type="text"
+                id="input-nome"
+                placeholder="Digite seu nome"
+            >
         </div>
-        <div class="form-group">
-            <label>E-mail</label>
-            <input type="email" id="input-email" placeholder="seu@email.com">
+
+        
+        <div>
+            <label for="input-email">E-mail</label>
+            <input
+                type="email"
+                id="input-email"
+                placeholder="Digite seu e-mail"
+            >
         </div>
-        <div class="form-group">
-            <label>Senha</label>
-            <input type="password" id="input-senha" placeholder="••••••••">
+
+       
+        <div>
+            <label for="input-senha">Senha</label>
+            <input
+                type="password"
+                id="input-senha"
+                placeholder="Digite sua senha"
+            >
         </div>
-        <button class="btn-primary" id="btn-auth">Entrar</button>
-        <button class="btn-warning" id="btn-toggle" style="width: 100%; margin-top: 8px;">Criar nova conta</button>
-        <p class="erro" id="msg-erro"></p>
+
+        
+        <button id="btn-auth">
+            Entrar
+        </button>
+
+       
+        <button id="btn-toggle">
+            Criar nova conta
+        </button>
+
+        
+        <p id="msg-erro"></p>
+
     </div>
-    <script type="module" src="script.js"></script>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
